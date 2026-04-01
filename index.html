@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Mahasiswa IT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="text-2xl font-bold gradient-text italic">DevStudent.</div>
+                <div class="hidden md:flex space-x-8 font-medium">
+                    <a href="#home" class="hover:text-blue-600 transition">Beranda</a>
+                    <a href="#about" class="hover:text-blue-600 transition">Tentang</a>
+                    <a href="#skills" class="hover:text-blue-600 transition">Keahlian</a>
+                    <a href="#projects" class="hover:text-blue-600 transition">Proyek</a>
+                    <a href="#contact" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Kontak</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 px-4">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2 mb-10 md:mb-0 text-center md:text-left">
+                <h2 class="text-blue-600 font-semibold tracking-wide uppercase mb-2">Halo Dunia!</h2>
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Saya <span class="gradient-text">Budi Santoso</span></h1>
+                <p class="text-xl text-gray-600 mb-8 max-w-lg mx-auto md:mx-0">
+                    Mahasiswa Teknik Informatika yang antusias dalam pengembangan web dan kecerdasan buatan. Sedang mencari peluang untuk belajar dan berkembang.
+                </p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                    <a href="#projects" class="px-8 py-3 bg-gray-900 text-white rounded-full font-semibold hover:bg-gray-800 transition">Lihat Karya</a>
+                    <a href="#" class="px-8 py-3 border border-gray-300 rounded-full font-semibold hover:bg-gray-100 transition">Unduh CV</a>
+                </div>
+            </div>
+            <div class="md:w-1/3">
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=400" alt="Foto Profil" class="relative rounded-2xl w-full shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h3 class="text-3xl font-bold mb-8">Tentang Saya</h3>
+            <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                Saat ini saya menempuh pendidikan S1 Teknik Informatika di Universitas Gadjah Mada (Semester 6). Fokus utama saya adalah membangun aplikasi yang efisien dan memiliki pengalaman pengguna yang luar biasa.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <div class="p-6 bg-blue-50 rounded-xl">
+                    <i class="fas fa-university text-blue-600 text-2xl mb-4"></i>
+                    <h4 class="font-bold mb-2">Edukasi</h4>
+                    <p class="text-sm text-gray-600">IPK: 3.85 / 4.00</p>
+                </div>
+                <div class="p-6 bg-purple-50 rounded-xl">
+                    <i class="fas fa-code text-purple-600 text-2xl mb-4"></i>
+                    <h4 class="font-bold mb-2">Minat</h4>
+                    <p class="text-sm text-gray-600">Fullstack Dev & Data Science</p>
+                </div>
+                <div class="p-6 bg-green-50 rounded-xl">
+                    <i class="fas fa-certificate text-green-600 text-2xl mb-4"></i>
+                    <h4 class="font-bold mb-2">Sertifikasi</h4>
+                    <p class="text-sm text-gray-600">AWS Cloud Practitioner</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-16">Keahlian Teknis</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- Skill Item -->
+                <div class="bg-white p-6 rounded-xl shadow-sm flex flex-col items-center hover:shadow-md transition">
+                    <i class="fab fa-react text-blue-400 text-4xl mb-4"></i>
+                    <span class="font-semibold">React.js</span>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm flex flex-col items-center hover:shadow-md transition">
+                    <i class="fab fa-js text-yellow-400 text-4xl mb-4"></i>
+                    <span class="font-semibold">JavaScript</span>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm flex flex-col items-center hover:shadow-md transition">
+                    <i class="fab fa-python text-blue-600 text-4xl mb-4"></i>
+                    <span class="font-semibold">Python</span>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm flex flex-col items-center hover:shadow-md transition">
+                    <i class="fab fa-node-js text-green-500 text-4xl mb-4"></i>
+                    <span class="font-semibold">Node.js</span>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm flex flex-col items-center hover:shadow-md transition">
+                    <i class="fas fa-database text-blue-800 text-4xl mb-4"></i>
+                    <span class="font-semibold">SQL / NoSQL</span>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm flex flex-col items-center hover:shadow-md transition">
+                    <i class="fab fa-git-alt text-orange-600 text-4xl mb-4"></i>
+                    <span class="font-semibold">Git</span>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm flex flex-col items-center hover:shadow-md transition">
+                    <i class="fab fa-docker text-blue-500 text-4xl mb-4"></i>
+                    <span class="font-semibold">Docker</span>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm flex flex-col items-center hover:shadow-md transition">
+                    <i class="fas fa-cloud text-gray-500 text-4xl mb-4"></i>
+                    <span class="font-semibold">Cloud Computing</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-16">Proyek Unggulan</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="border border-gray-100 rounded-2xl overflow-hidden group hover:border-blue-200 transition">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=500" alt="Dashboard Bisnis" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold mb-2">Sistem Monitoring IoT</h4>
+                        <p class="text-gray-600 text-sm mb-4">Membangun dashboard real-time untuk memantau suhu dan kelembaban menggunakan ESP32 dan Firebase.</p>
+                        <div class="flex space-x-2">
+                            <span class="px-2 py-1 bg-gray-100 text-xs rounded text-gray-600">IoT</span>
+                            <span class="px-2 py-1 bg-gray-100 text-xs rounded text-gray-600">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="border border-gray-100 rounded-2xl overflow-hidden group hover:border-blue-200 transition">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=500" alt="E-Commerce" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold mb-2">Marketplace Kampus</h4>
+                        <p class="text-gray-600 text-sm mb-4">Platform jual beli barang bekas khusus mahasiswa dengan sistem autentikasi SSO Kampus.</p>
+                        <div class="flex space-x-2">
+                            <span class="px-2 py-1 bg-gray-100 text-xs rounded text-gray-600">Laravel</span>
+                            <span class="px-2 py-1 bg-gray-100 text-xs rounded text-gray-600">Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="border border-gray-100 rounded-2xl overflow-hidden group hover:border-blue-200 transition">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=500" alt="Hardware" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold mb-2">Deteksi Objek AI</h4>
+                        <p class="text-gray-600 text-sm mb-4">Aplikasi desktop menggunakan OpenCV dan Python untuk mendeteksi masker wajah di area publik.</p>
+                        <div class="flex space-x-2">
+                            <span class="px-2 py-1 bg-gray-100 text-xs rounded text-gray-600">AI</span>
+                            <span class="px-2 py-1 bg-gray-100 text-xs rounded text-gray-600">Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900 text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h3 class="text-3xl font-bold mb-8 italic">Mari Berkolaborasi!</h3>
+            <p class="text-gray-400 mb-12">Saya selalu terbuka untuk diskusi mengenai teknologi, proyek freelance, atau peluang magang.</p>
+            <div class="flex justify-center space-x-6 mb-12">
+                <a href="#" class="text-3xl hover:text-blue-400 transition"><i class="fab fa-github"></i></a>
+                <a href="#" class="text-3xl hover:text-blue-400 transition"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-3xl hover:text-blue-400 transition"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:budi@example.com" class="text-3xl hover:text-blue-400 transition"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="text-gray-500 text-sm">© 2024 Budi Santoso. Dibuat dengan semangat Mahasiswa IT.</p>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
